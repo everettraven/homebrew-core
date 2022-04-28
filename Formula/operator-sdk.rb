@@ -21,7 +21,8 @@ class OperatorSdk < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:   "b951111c79c494c2e3a4ea06562306d698959a6807b002132c578cca64ad75eb"
   end
 
-  depends_on "go"
+  # TODO(everettraven): update this to be "go" when operator-sdk add support for go 1.18
+  depends_on "go@1.17"
 
   def install
     ENV["GOBIN"] = bin
