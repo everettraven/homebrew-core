@@ -3,17 +3,17 @@ class Dxpy < Formula
 
   desc "DNAnexus toolkit utilities and platform API bindings for Python"
   homepage "https://github.com/dnanexus/dx-toolkit"
-  url "https://files.pythonhosted.org/packages/94/ed/f7ea772856834c104e79e8723e3674207afa42b45402a59627e79652c0ad/dxpy-0.322.1.tar.gz"
-  sha256 "cbaad43e7f59d856fae993133cf06257b256a0389ba67ef8a1367d6823fa116d"
+  url "https://files.pythonhosted.org/packages/5b/ad/64f1b34315c476ec545f757498f3dd39bce21c39868abecbf4e7dda048bf/dxpy-0.323.0.tar.gz"
+  sha256 "da869c5d86e6d16df1fb5739d8f20f8f7726ce4c80825b62889653070d7afaa4"
   license "Apache-2.0"
 
   bottle do
-    sha256 cellar: :any,                 arm64_monterey: "e3e8404eba807dccc4c57c7e266800cf78edd5ba890d3a71a6f9f787298d1473"
-    sha256 cellar: :any,                 arm64_big_sur:  "531355978f2190928bf1e78bbf2e58121ad14ef3d20b1163f59921492fbc3348"
-    sha256 cellar: :any,                 monterey:       "d1fd93fb41e79f2c6d24c79e9f4cbcf8669a1718207a49638bbcb87909ff3321"
-    sha256 cellar: :any,                 big_sur:        "01bbdd299d55a9075f870f9df7b88d4e37ed7b708aa2f4d9b9ae2fad6d18adbb"
-    sha256 cellar: :any,                 catalina:       "9261abc3f126ba217d56aa6fc72ce0b4a4ef44adb17682f2707e1205770e9fec"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:   "0bfa2c0b4a5fbbefc96af53595b430f3f994b5d5b5dca9dbedc9fbb08451f055"
+    sha256 cellar: :any,                 arm64_monterey: "5bcbc0d0efcbc8890fb8f36799c60c637ef73b7e53490e965b0b50f69004e260"
+    sha256 cellar: :any,                 arm64_big_sur:  "60b23971e42057748dcbce92b7f79b6a0e2b88e36eca7124670fc5853ecb95e9"
+    sha256 cellar: :any,                 monterey:       "0cf9762e308d2596d2cd3f0ad0ae62630983dbc8540e846424bea2e2ae7ab16e"
+    sha256 cellar: :any,                 big_sur:        "5aafc63d6acc37ad7a90eda7207bafc79491682216726d27bfd4140d17dca94f"
+    sha256 cellar: :any,                 catalina:       "8bed3cc96488f4102bc1a887da79a835a20a587e2f42533f5ba88a85b3ec8638"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:   "d900a1b5209ff903feb3b850d66dec76a7f8d565edb30d641d269f6431fdcece"
   end
 
   depends_on "rust" => :build # for cryptography

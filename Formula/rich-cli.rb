@@ -2,18 +2,18 @@ class RichCli < Formula
   include Language::Python::Virtualenv
 
   desc "Command-line toolbox for fancy output in the terminal"
-  homepage "https://github.com/Textualize/rich-cli"
-  url "https://files.pythonhosted.org/packages/e2/73/d8e955678d670fa1983f61eabb7c83b4d55f568d4eb6f00d3bc4ca34289a/rich-cli-1.6.1.tar.gz"
-  sha256 "18db9408e5e670f54bfe93a2b533a0f10261232c70fa92a4343440777ed50359"
+  homepage "https://github.com/textualize/rich-cli"
+  url "https://files.pythonhosted.org/packages/1f/72/a7b7536dc3e5d9d3f6eb02bf2107907a8bc916037b2f91a387fa4c907f55/rich-cli-1.7.0.tar.gz"
+  sha256 "7e9a2bca579cf47fbd1b6bfc0f43b7d9e93b390b376114a66b5c4ea5a90296a9"
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "cf30d7bc6ef19752b2c445957844732565c1c237625958b89fc0bb4e63125c69"
-    sha256 cellar: :any_skip_relocation, arm64_big_sur:  "eb53537c924cad2c597de273a82c1b992231f7b4928554214117a97f28f089c6"
-    sha256 cellar: :any_skip_relocation, monterey:       "a508a03685e3e32cc17169cf71d0ac10d12c9a13f6898e61d5d054ebf1b1ab68"
-    sha256 cellar: :any_skip_relocation, big_sur:        "cf8a0fe57aefeea9c70504c5bbf59b132f1211073f98929606d45a282545b4c4"
-    sha256 cellar: :any_skip_relocation, catalina:       "762e444e082923f7b5420b08b7fcc25a13dbd48bdc2a18f3b336e77deb00f5ac"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:   "8f71b1f94cc92cdac340521af9851983464284573a44aabaf41ffd6b857285e1"
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "59d54a226e33fdd621f7fab4f1c991385ccca6a86eac252856925f22813574a5"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur:  "36fb6268ba8546c3b38bbdf1c0ec5a2e6af21cc1c547cc28ad120b1df74186e7"
+    sha256 cellar: :any_skip_relocation, monterey:       "b8846ec8b0cf278c20c58223420b290bf80cb3936314156655d85fdcf39dff45"
+    sha256 cellar: :any_skip_relocation, big_sur:        "88e345c591b3708e37fe53360091ba74a2a605ecdd683e9a24ce0212b2f75530"
+    sha256 cellar: :any_skip_relocation, catalina:       "ddcf4596a63ef2b1a667f0ed4cb7d8cc8be85e043c97f0a391253a5ec3da080a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:   "ea9b066cdcf4d873c9d5ede8b7e75d56a10d49f411b3bb846f6aebbe17a5a472"
   end
 
   depends_on "python@3.10"
@@ -59,8 +59,8 @@ class RichCli < Formula
   end
 
   resource "rich" do
-    url "https://files.pythonhosted.org/packages/8e/81/d59e9198a32206a156649a24a813a36a50461d9f6e669378c68aed974910/rich-12.0.1.tar.gz"
-    sha256 "3fba9dd15ebe048e2795a02ac19baee79dc12cc50b074ef70f2958cd651b59a9"
+    url "https://files.pythonhosted.org/packages/a4/50/8e34f3f18dc3914bd14a0722cb471410488495fdcd93e122724d4dd8c5f9/rich-12.3.0.tar.gz"
+    sha256 "7e8700cda776337036a712ff0495b04052fb5f957c7dfb8df997f88350044b64"
   end
 
   resource "rich-rst" do
@@ -69,8 +69,8 @@ class RichCli < Formula
   end
 
   resource "textual" do
-    url "https://files.pythonhosted.org/packages/6a/05/0bfd14fde0d5473add167dea0a66665fff0cebaad5bb07d04198d30dfd46/textual-0.1.17.tar.gz"
-    sha256 "af6aa1fa34fe6d40689ce55a7bf519a07e48523a75b95cbed572990e0d6b6f84"
+    url "https://files.pythonhosted.org/packages/8c/d1/c228993e8a21e24bb43a0376b2901b6f3f2033dae13e7f76d1103bb9b8a3/textual-0.1.18.tar.gz"
+    sha256 "b2883f8ed291de58b9aa73de6d24bbaae0174687487458a4eb2a7c188a2acf23"
   end
 
   resource "urllib3" do

@@ -3,25 +3,25 @@ class Tmuxp < Formula
 
   desc "Tmux session manager. Built on libtmux"
   homepage "https://tmuxp.git-pull.com/"
-  url "https://files.pythonhosted.org/packages/be/74/a39de93df49dc4e46f4d5949bff104ba75d1fa9307868dc3f15473e49ae4/tmuxp-1.11.0.tar.gz"
-  sha256 "379919f9ed7b6602ce0af57f95c4ff85d1b554da8bc61f7c40e4323340666420"
+  url "https://files.pythonhosted.org/packages/95/17/0d9ba4a6c8d11f043f6516f7c804acc211b28c52c7b1fb3e28bf175db052/tmuxp-1.11.1.tar.gz"
+  sha256 "436d1fbf356510c21f7376628fbcfbdedce4e7a63ecc81640e58bd41a63e010d"
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "08d0b0523a04416aa0e9e94810c9570e17da7202edeba3d2dcbf11faf3e6fe6c"
-    sha256 cellar: :any_skip_relocation, arm64_big_sur:  "eb150b849b38c73353d75588d63b76edf9d1630d216eff344b8faf337e5491b2"
-    sha256 cellar: :any_skip_relocation, monterey:       "1ee074ac1136a4e7891f6251c64cdb5213dbddd2692ee7a969c4042c88907b2c"
-    sha256 cellar: :any_skip_relocation, big_sur:        "f598a8783e5ebd6c46cdf8ac779a1cfb44711e8686ebbe472607ba815dbf17d3"
-    sha256 cellar: :any_skip_relocation, catalina:       "786477f6a740e1a93f1f77ace10b04c6ba57ed350405b71d0f2784ca1728b18b"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:   "978b8a78bc106a1f29824f9a8025ead17e971112e8a22a39aa0608527f6391df"
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "0cce6d7a7c2b1df72c3d6e94d6f9e26ea14ce89c341041b2af1788fea8464da1"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur:  "9ed894230d5056bcc6c8b7620fb222c2fb52e75a13d7eb3225513ad1ededf958"
+    sha256 cellar: :any_skip_relocation, monterey:       "91cfc95592e7b38ba1cf579c2abb3829fd5407a6d9f6e47c1cac98e6ff8f41ed"
+    sha256 cellar: :any_skip_relocation, big_sur:        "7382ce5ccdad4f10f076c2e9d8545fb0dd1723dd3d825bb4aea5184122b74a54"
+    sha256 cellar: :any_skip_relocation, catalina:       "4fb971f74212513e5a9a1bb63a4746271cadb891c9f65e4942238aa368b75cd8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:   "62b876f3999b857d232f7be16e3ffe62ce4c79574847d51971fd373cce136b13"
   end
 
   depends_on "python@3.10"
   depends_on "tmux"
 
   resource "click" do
-    url "https://files.pythonhosted.org/packages/42/e1/4cb2d3a2416bcd871ac93f12b5616f7755a6800bccae05e5a99d3673eb69/click-8.1.2.tar.gz"
-    sha256 "479707fe14d9ec9a0757618b7a100a0ae4c4e236fac5b7f80ca68028141a1a72"
+    url "https://files.pythonhosted.org/packages/59/87/84326af34517fca8c58418d148f2403df25303e02736832403587318e9e8/click-8.1.3.tar.gz"
+    sha256 "7682dc8afb30297001674575ea00d1814d808d6a36af415a82bd481d37ba7b8e"
   end
 
   resource "colorama" do

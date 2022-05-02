@@ -4,17 +4,17 @@ class Checkov < Formula
   desc "Prevent cloud misconfigurations during build-time for IaC tools"
   homepage "https://www.checkov.io/"
   # checkov should only be updated every 15 releases on multiples of 15
-  url "https://files.pythonhosted.org/packages/f4/53/9c2d2ec503453eddada96aeb74952f2a68585b99aea771755e05888d7e7a/checkov-2.0.1080.tar.gz"
-  sha256 "a9f7300d50d6fd19da2d227f90077cb9676189f15d7497bd0a7f761afa7f0ed2"
+  url "https://files.pythonhosted.org/packages/91/e5/f0dfa53822000027ad3c8ff4b0ce089be05b46abf45b56d29cecc282bb73/checkov-2.0.1095.tar.gz"
+  sha256 "79858cefa669e9c85cef2fbaeec389388316ad31976407f14a0e1b901e9b80b5"
   license "Apache-2.0"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "cef98f750db353f00ba1f99336d6262cc845537b62cccc66d33dec81e6d8262e"
-    sha256 cellar: :any_skip_relocation, arm64_big_sur:  "6353954af5525832fe499b180ddfbd4f000614f6f585c9838ff0dbb344984278"
-    sha256 cellar: :any_skip_relocation, monterey:       "5cac1de901b8d37956a84849161cbe435baaf69824f5337c3b08e2792e22e54f"
-    sha256 cellar: :any_skip_relocation, big_sur:        "45eaf4254ec08ef11464c74a9ceafc2b030a62347d05eaea5456c6be431587c6"
-    sha256 cellar: :any_skip_relocation, catalina:       "e682956a4ea4e8d7c55222404acfdc09c8525fd3d5c0cb4d7c2593314443fa9f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:   "a1a4ba7d08f7dd6265a74c84286dd5c5683161c9ab94ad284a80987ea5c2073d"
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "a4ea993fbb474ad0697f3d806ea9e0b7dbf26d668b74e4786c28bd5ae68a04be"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur:  "f5251c9152c93138ac07a9b1fd761c48d9ee99683bdf3a5251749dc81f6cd75d"
+    sha256 cellar: :any_skip_relocation, monterey:       "3885f4d64a73330fe3d805ddaa29dc418b7969b8004e226c7452972d21568f68"
+    sha256 cellar: :any_skip_relocation, big_sur:        "91610f13aed6b15edbeea8392e885aac680e5420830374dd59cfbfdaf257a102"
+    sha256 cellar: :any_skip_relocation, catalina:       "4cabb92ed2d667ba83f7ba1b4bf44e588c44f6c2d68e80816e2ba138b3175e9b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:   "d9f1bcab3ad3cedb1de464aae7aa9af588094521bf022859396c7fb0ec210629"
   end
 
   depends_on "python-tabulate"
@@ -67,13 +67,13 @@ class Checkov < Formula
   end
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/07/0e/0fdf99382eadd8481f09fc86c97b97c562a795b6494e75b84000320ee730/boto3-1.22.2.tar.gz"
-    sha256 "fb9a66722a15b0a8edb4f29d63f013877c4c528eff1225bb31dab723c3e5a9ed"
+    url "https://files.pythonhosted.org/packages/ac/b0/a279790642886feeae5ca57c451b5f17ca63977e7f038394a6c9b52f380b/boto3-1.22.4.tar.gz"
+    sha256 "71019d49562112bcf8c2e5c183f3cca263edf02785e6a2c5f98ee104927cbb44"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/50/5c/d5f027cc397e4df0c618026f6a04330cdb163ee4d0664544f6975dfbdde3/botocore-1.25.2.tar.gz"
-    sha256 "78363cd023c6123a65d90080e14a9fb625a9639d970ab03471c6fe95258ab8c0"
+    url "https://files.pythonhosted.org/packages/c8/2c/a11fc13b157fa295fc25a9728f78ce816166a9541a7c3245cc05408ecd0d/botocore-1.25.4.tar.gz"
+    sha256 "71cf60ccb024d3c925424d28eba9ca953fc13f36a345dca177b080971ed1141a"
   end
 
   resource "cached-property" do
@@ -102,8 +102,8 @@ class Checkov < Formula
   end
 
   resource "click" do
-    url "https://files.pythonhosted.org/packages/42/e1/4cb2d3a2416bcd871ac93f12b5616f7755a6800bccae05e5a99d3673eb69/click-8.1.2.tar.gz"
-    sha256 "479707fe14d9ec9a0757618b7a100a0ae4c4e236fac5b7f80ca68028141a1a72"
+    url "https://files.pythonhosted.org/packages/59/87/84326af34517fca8c58418d148f2403df25303e02736832403587318e9e8/click-8.1.3.tar.gz"
+    sha256 "7682dc8afb30297001674575ea00d1814d808d6a36af415a82bd481d37ba7b8e"
   end
 
   resource "click-option-group" do
@@ -187,8 +187,8 @@ class Checkov < Formula
   end
 
   resource "Jinja2" do
-    url "https://files.pythonhosted.org/packages/89/e3/b36266381ae7a1310a653bb85f4f3658c462a69634fa9b2fef76252a50ed/Jinja2-3.1.1.tar.gz"
-    sha256 "640bed4bb501cbd17194b3cace1dc2126f5b619cf068a726b98192a0fde74ae9"
+    url "https://files.pythonhosted.org/packages/7a/ff/75c28576a1d900e87eb6335b063fab47a8ef3c8b4d88524c4bf78f670cce/Jinja2-3.1.2.tar.gz"
+    sha256 "31351a702a408a9e7595a8fc6150fc3f43bb6bf7e319770cbc0db9df9437e852"
   end
 
   resource "jmespath" do
