@@ -21,6 +21,8 @@ class OperatorSdk < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:   "6ab8c291e0dad800d4405f56002ba1252c13eb4b91e8d4b563b95da33b3a472f"
   end
 
+
+  # TODO(everettraven): update this to be "go" when operator-sdk add support for go 1.18
   depends_on "go@1.17"
 
   def install
