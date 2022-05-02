@@ -21,7 +21,7 @@ class OperatorSdk < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:   "6ab8c291e0dad800d4405f56002ba1252c13eb4b91e8d4b563b95da33b3a472f"
   end
 
-  depends_on "go"
+  depends_on "go@1.17"
 
   def install
     ENV["GOBIN"] = bin
@@ -48,7 +48,14 @@ class OperatorSdk < Formula
       assert_match commit_regex, version_output
     end
 
-    output = shell_output("#{bin}/operator-sdk init --domain=example.com --license apache2 --owner BrewTest 2>&1", 1)
-    assert_match "failed to initialize project", output
+    mkdir "test"
+
+    chdir "test" do
+      output = shell_output("#{bin}/operator-sdk init --domain=example.com --repo=github.com/example/memcached")
+      assert_match "$ operator-sdk create api", output
+
+      output = shell_output("#{bin}/operator-sdk create api --group c --version v1 --kind M --resource --controller")
+      assert_match "$ make manifests", output
+    end
   end
 end
