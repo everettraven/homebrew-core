@@ -49,7 +49,14 @@ class OperatorSdk < Formula
       assert_match commit_regex, version_output
     end
 
-    output = shell_output("#{bin}/operator-sdk init --domain=example.com --license apache2 --owner BrewTest 2>&1", 1)
-    assert_match "failed to initialize project", output
+    mkdir "test"
+
+    chdir "test" do
+      output = shell_output("#{bin}/operator-sdk init --domain=example.com --repo=github.com/example/memcached")
+      assert_match "$ operator-sdk create api", output
+
+      output = shell_output("#{bin}/operator-sdk create api --group c --version v1 --kind M --resource --controller")
+      assert_match "$ make manifests", output
+    end
   end
 end
