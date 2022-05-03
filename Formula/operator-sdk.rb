@@ -21,23 +21,26 @@ class OperatorSdk < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:   "6ab8c291e0dad800d4405f56002ba1252c13eb4b91e8d4b563b95da33b3a472f"
   end
 
-  depends_on "go"
+  depends_on "go@1.17"
 
   def install
-    ENV["GOBIN"] = bin
+    ENV["GOBIN"] = libexec/"bin"
     system "make", "install"
 
     # Install bash completion
-    output = Utils.safe_popen_read(bin/"operator-sdk", "completion", "bash")
+    output = Utils.safe_popen_read(libexec/"bin/operator-sdk", "completion", "bash")
     (bash_completion/"operator-sdk").write output
 
     # Install zsh completion
-    output = Utils.safe_popen_read(bin/"operator-sdk", "completion", "zsh")
+    output = Utils.safe_popen_read(libexec/"bin/operator-sdk", "completion", "zsh")
     (zsh_completion/"_operator-sdk").write output
 
     # Install fish completion
-    output = Utils.safe_popen_read(bin/"operator-sdk", "completion", "fish")
+    output = Utils.safe_popen_read(libexec/"bin/operator-sdk", "completion", "fish")
     (fish_completion/"operator-sdk.fish").write output
+
+    output = libexec/"bin/operator-sdk"
+    (bin/"operator-sdk").write_env_script(output, PATH: "$PATH:#{Formula["go@1.17"].opt_bin}")
   end
 
   test do
