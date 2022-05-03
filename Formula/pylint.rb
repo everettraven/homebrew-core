@@ -3,24 +3,24 @@ class Pylint < Formula
 
   desc "It's not just a linter that annoys you!"
   homepage "https://github.com/PyCQA/pylint"
-  url "https://files.pythonhosted.org/packages/67/8f/79bda74492da08c09016a55942c5fe001fff199b8aaff7a6d82de1012fb4/pylint-2.13.7.tar.gz"
-  sha256 "911d3a97c808f7554643bcc5416028cfdc42eae34ed129b150741888c688d5d5"
+  url "https://files.pythonhosted.org/packages/9c/77/f5241dd3242698746252290a2294cc7e85fcb5541ed3f7f7d790a1cf1108/pylint-2.13.8.tar.gz"
+  sha256 "ced8968c3b699df0615e2a709554dec3ddac2f5cd06efadb69554a69eeca364a"
   license "GPL-2.0-or-later"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "da4d8a34a0e2f0ad4e39ee8aafbda8f019e613c6f2384b22c0b2fb6b0a468e72"
-    sha256 cellar: :any_skip_relocation, arm64_big_sur:  "3402b8824e08676799907891d96ff1238ea0af0e8d32690b6e1ff655122d8220"
-    sha256 cellar: :any_skip_relocation, monterey:       "69def2c3380db3e74ec7a3f9ca498c4b882274e8b5fb29a01f1a3e44cb034c46"
-    sha256 cellar: :any_skip_relocation, big_sur:        "216d431b44ae5bd71053015abf7f6edba57c256e2dd51fd3e953de4e46eae580"
-    sha256 cellar: :any_skip_relocation, catalina:       "ac026dbe84339e309d5b88401b9b0c08a39fa2ffcc5e7679894edf46b3de393a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:   "7fac38287c7fe2ad0a241631dbaad19489a6660828222c1b28951a2dc5db45f3"
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "2c323bd224af743ae1acfdcb21b162438a7efb3b6977e3c138248be0cbd226d9"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur:  "b595c6b96e38ac9e8c8729e2788fa1cef077538b20ee80635f54a3f474cec3d5"
+    sha256 cellar: :any_skip_relocation, monterey:       "42caac67218c9d49331732919e51455c604f36b0cd0f7d0afd05e82b7b1a9793"
+    sha256 cellar: :any_skip_relocation, big_sur:        "3fc4f3ba4e72857366d9bb876ae6c213e94558e3e373c2e60361a5070709b0fa"
+    sha256 cellar: :any_skip_relocation, catalina:       "f7d861810808cfae5fdadb2baa2d9e0fef663ce9dda51ceb1b9a88140a072245"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:   "8f3e5c635d45a8486daf371be2fc60d2f59df7de59379855ee7a2b836d75868f"
   end
 
   depends_on "python@3.10"
 
   resource "astroid" do
-    url "https://files.pythonhosted.org/packages/98/c8/e1de5f7dd1ff87c2dd9fce3e7e0dd5605946cdc480bdf70cf95d5bbbfd45/astroid-2.11.3.tar.gz"
-    sha256 "4e5ba10571e197785e312966ea5efb2f5783176d4c1a73fa922d474ae2be59f7"
+    url "https://files.pythonhosted.org/packages/a9/d5/e2ed69df4dc6a707f1dfe00fb15c128f94a279bab2fbbdefb7185d313190/astroid-2.11.4.tar.gz"
+    sha256 "561dc6015eecce7e696ff7e3b40434bc56831afeff783f0ea853e19c4f635c06"
   end
 
   resource "dill" do
@@ -54,8 +54,8 @@ class Pylint < Formula
   end
 
   resource "wrapt" do
-    url "https://files.pythonhosted.org/packages/c7/b4/3a937c7f8ee4751b38274c8542e02f42ebf3e080f1344c4a2aff6416630e/wrapt-1.14.0.tar.gz"
-    sha256 "8323a43bd9c91f62bb7d4be74cc9ff10090e7ef820e27bfe8815c57e68261311"
+    url "https://files.pythonhosted.org/packages/11/eb/e06e77394d6cf09977d92bff310cb0392930c08a338f99af6066a5a98f92/wrapt-1.14.1.tar.gz"
+    sha256 "380a85cf89e0e69b7cfbe2ea9f765f004ff419f34194018a6827ac0e3edfed4d"
   end
 
   def install
