@@ -23,7 +23,7 @@ class OperatorSdk < Formula
 
   # Resolves upstream issue: https://github.com/operator-framework/operator-sdk/issues/5689
   # Should be updated to "go" when the following upstream issue is resolved: https://github.com/operator-framework/operator-sdk/issues/5740
-  depends_on "go@1.17"
+  depends_on "go"
 
   def install
     ENV["GOBIN"] = libexec/"bin"
